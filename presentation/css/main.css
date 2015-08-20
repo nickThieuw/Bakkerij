@@ -1,0 +1,713 @@
+/* ==========================================================================
+   Algemeen
+   ========================================================================== */
+
+/*==================== TYPOGRAFIE =========================================*/
+@font-face { 
+    font-family: 'Marck Script';
+    src: url('../fontss/MarckScript-Regular.ttf');
+}
+body {    
+    font-family: 'Marck Script', cursive;
+
+}
+.dropdown{
+    font-size: 1.2em;
+}
+.dropdown li{
+    font-size: 1.2em;
+}
+.navbar-brand { /*bootstrap:18px*/
+    font-size: 1.6em;
+}
+h1{
+    font-size: 2.6em;
+}
+h2 {
+    font-size: 2.4em;
+}
+h3 {
+    font-size: 1.8em;
+}
+h4 {
+    font-size: 1.6em;
+}
+p {
+    font-size: 1.6em;
+}
+li.list-group-item h3{
+    font-size: 1.6em;
+}
+li.list-group-item {
+    font-size: 1.4em;
+}
+.afrekenen li {
+    font-size: 1.8em;
+}
+.bakkerij h2 {
+    font-size: 2.2em;
+}
+.bakkerij p {
+    font-size: 1.4em;
+}
+label, input {
+    font-size: 1.4em;
+}
+.bestelling label {
+    font-size: 1.2em;
+}
+.btn-primary{
+    font-size: 0.6em;
+}
+.btn-primary.signIn{
+    font-size: 1.1em;
+}
+.btn-success {
+    font-size: 1.4em;
+}
+input::-webkit-input-placeholder {
+ font-size: 1.1em;   
+}
+input:-moz-placeholder { /* Firefox 18- */
+ font-size: 1.1em;
+}
+input:-moz-placeholder { /* Firefox 18- */
+ font-size: 1.1em
+}
+input::-moz-placeholder {  /* Firefox 19+ */
+ font-size: 1.1em;
+}
+input:-ms-input-placeholder {  
+ font-size: 1.1em;
+}
+.form-control{
+    font-size: 1.2em;
+}
+.form-control::-webkit-input-placeholder {
+    font-size: 1.1em;
+}
+.form-control:-moz-placeholder { /* Firefox 18- */
+    font-size: 1.1em;
+}
+.form-control::-moz-placeholder {  /* Firefox 19+ */
+    font-size: 1.1em;
+}
+.form-control:-ms-input-placeholder {  
+    font-size: 1.1em;
+}
+/*=================== COLOR =================================================*/
+body {
+    color: #702C04;
+    background-color: #702C04;/*#240D03;/*#B24600;*/
+}
+h1, h2, h3, h4 {
+    color: #702C04 ;
+}
+a {
+    color: #702C04;
+}
+
+a:hover, a:active, a:focus{
+    color: white;
+}
+/*formulieren*/
+input{
+    color: #702C04;
+}
+input::-webkit-input-placeholder {
+    color: #999;
+    opacity: 1;
+    filter: alpha(opacity=100);   
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+    color: #999;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: #999;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+input:-ms-input-placeholder {  
+    color: #999;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+/*opacity 1 omdat sommige browsers de kleuren veranderen met transparantie*/
+.form-control{
+    color: #702C04;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.form-control::-webkit-input-placeholder {
+    color: #999;
+    opacity: 1;
+    filter: alpha(opacity=100);   
+}
+.form-control:-moz-placeholder { /* Firefox 18- */
+    color: #999;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.form-control::-moz-placeholder {  /* Firefox 19+ */
+    color: #999;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.form-control:-ms-input-placeholder {  
+    color: #999;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+/*knop van knop van bestel, afreken, contact*/
+.btn-success {
+    background-image: none;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-color: #DA9A4C;
+    color: white;
+    border-color: white; 
+}
+.btn-success:hover, .btn-success:active{
+    background-color: #702C04;
+    color: white;
+    border-color:white;
+}
+.btn-success a, .btn-success a:hover, .btn-success a:active{
+    color: white;
+}
+/***********************************************/
+li.list-group-item{
+    
+    background-color: #F2D061;/*#52F7FF;*/   
+}
+li.list-group-item h3{
+    color: inherit;
+}
+
+/*==================== OPMAAK ================================================*/
+
+body {
+    padding-top: 50px;
+}
+li.list-group-item{
+    border: 3px solid white;
+}
+.btn-success {
+    box-shadow:0 0.25em 0.375em rgba(0,0,0, .5);
+    -moz-box-shadow:0 0.25em 0.375em rgba(0,0,0, .5);
+    -webkit-box-shadow:0 0.25em 0.375em rgba(0,0,0, .5);
+
+    height: 2.6em;
+    font-size: 1.4em;
+    width: 100%;
+    margin-bottom: 0.2em;
+}
+a.btn-success {
+    line-height: 150%;
+}
+.col-md-4{
+    margin-bottom: 1em;
+}
+.geefTopMargin { /*wordt gebruikt in signUp*/
+    margin-top: 1em;
+}
+.geefMargin{ /*wordt gebruikt in bestel, contact, signUp en afrekenenn*/
+    margin-bottom: 1.5em;
+}
+.geefPad{/*wordt gebruikt in contact en signUp*/
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.neemPadCol{/*wordt gebruikt in contact en signUp*/
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*  ===========================================================================
+    banner & footer
+    ==========================================================================*/                
+/*================ TYPOGRAFIE ============================================*/
+.jumbotron h1{
+    font-size: 6.2em;
+}
+.jumbotron p{
+    font-size: 2.8em;
+}
+/*================== COLOR ===============================================*/
+
+/*dropdownmenu aangepast aan de toolbar*/
+.navbar-inverse { 
+    background-image: none; 
+    background-image: none; 
+    background-repeat: no-repeat;
+    background-color: #702C04;/*#B24600;*/
+    border-color: #702C04;/*#B24600;*/
+}
+/*brand = link naar index.php*/
+.navbar-inverse .navbar-brand {
+    color: #DA9A4C;
+}
+.navbar-inverse .navbar-form {
+    border-color: #702C04;
+}
+/*de borders van de collapse*/
+.navbar-inverse .navbar-collapse {
+    border-color: #702C04;
+}
+/*de kader rond de 3 streepjes van mobile button*/
+.navbar-inverse .navbar-toggle {
+    border-color: #DA9A4C;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    border-color: #DA9A4C;
+}
+/*hover over die button*/
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
+    background-color: #702C04;
+}
+/***************************************/
+/*groot formaat*/
+.dropdown-menu .glyphicon{
+    color: #F2D061;
+}
+ul.dropdown-menu{
+    background-color: #A3897A;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: white;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:active
+{
+    color: #FFF;
+    background-image: none;
+    background-color: #DA9A4C;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #A3897A;
+    background-color: #702C04;
+}
+.navbar-inverse .navbar-nav > li > a{
+    color: white;
+}
+/*****************************************/
+.afbeelding { 
+    background-image: url(../img/bakkerij-cloet-07.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.jumbotron {
+    background-color: white;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.jumbotron h1{
+    color: #702C04;
+}
+/*knop van signUp*/
+.btn-primary {
+    background-image: none;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-color: #702C04;
+    color: white;
+    border-color: #240D03;
+}
+.btn-primary:hover, .btn-primary:active{
+    background-color: white;
+    color: #702C04;
+    border-color: #702C04;
+}
+.btn-primary.signIn{
+    color: white ;
+    border-color: white;
+    background-color: #DA9A4C;
+}
+.btn-primary.signIn:hover, .btn-primary.signIn:active {
+    color: white;
+    background-color: #A3897A;
+    border-color: white;
+}
+.btn-primary.disabled{
+    color: white;
+    background-color: #702C04;
+    border-color: #240D03;
+     opacity: 0.50;
+    filter: alpha(opacity=50);
+}
+
+.message {
+    color:#DA9A4C;
+}
+footer {
+    color: #702C04;
+    background-color: #DA9A4C;/*#021859;*/
+}
+/*================ OPMAAK ================================================*/
+.jumbotron{
+    padding-bottom: 75px;
+}
+footer {
+    text-align: center;
+    margin-top: 3%;
+}
+/*================= MEDIA QUERIES ========================================*/
+@media only screen and (max-width: 319px){
+    .jumbotron h1{
+        font-size: 2.8em;
+    }
+    .afbeelding {  
+        background-size: 240%;
+    }
+    .btn-primary {
+        font-size: 0.5em;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 479px){
+    .jumbotron h1{
+        font-size: 3em;
+    }
+    .afbeelding {  
+        background-size: 220%;
+    } 
+}
+@media only screen and (min-width: 480px)and (max-width: 767px) {
+    .jumbotron h1{
+        font-size: 4em;
+    }
+    .afbeelding {  
+        background-size: 220%;
+    } 
+}
+
+@media only screen and (max-width: 767px) {
+    .jumbotron .btn-primary{
+        display: block;
+        margin-bottom: 0.2em;
+        
+    }
+}
+/*==============================================================================
+    home page && content
+==============================================================================*/
+/*===================== color ============================================*/
+.content {
+    color: #240D03;
+    background-color: #A3897A;/*#00ABB2;*/
+}
+/*overkoepelende div*/
+.bakkerij {
+    background-color: #DA9A4C;    
+}
+.bakkerij h2{
+    color: #F2D061;
+}
+
+/*====================== opmaak ==========================================*/
+.content {
+    border: 1px solid white;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px; /* future proofing */
+    -khtml-border-radius: 6px; /* for old Konqueror browsers */
+
+    box-shadow:0 0.25em 0.375em rgba(0,0,0, .5);
+    -moz-box-shadow:0 0.25em 0.375em rgba(0,0,0, .5);
+    -webkit-box-shadow:0 0.25em 0.375em rgba(0,0,0, .5);
+}
+.row {
+    margin-bottom: 1em;
+}
+.content {
+    padding-bottom: 0%;
+    margin-top: 1%;
+}
+.bakkerij {
+    width: 90%;
+    height: 32em;
+    margin: 0 auto;
+
+    border: 2px solid #F2D061;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px; /* future proofing */
+    -khtml-border-radius: 6px; /* for old Konqueror browsers */
+
+    box-shadow:0 0.25em 0.375em rgba(0,0,0, .5);
+    -moz-box-shadow:0 0.25em 0.375em rgba(0,0,0, .5);
+    -webkit-box-shadow:0 0.25em 0.375em rgba(0,0,0, .5);
+}
+.bakkerijAfb {
+    padding-top: 1em;
+    width: 80%;
+    margin: 0 auto;  
+}
+.bakkerijText {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*===================== media queries ====================================*/
+@media only screen and (max-width: 991px){
+    .bakkerij {
+
+        height: 34em;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .content{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (min-width: 480px)and (max-width: 991px) {
+    .bakkerij {
+        width: 60%;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .content{
+        min-height: 31em;
+    }
+}
+
+/*==============================================================================
+    updateForm & signUp
+==============================================================================*/
+/*============================== typografie ==================================*/
+.formulierGebruiker input[type="text"]{
+    text-indent: 2.5%;
+}
+label.foutmelding {
+    text-align: center;   
+}
+/*pagina krijgt hier zijn volledige font-size*************************************************************************************************/
+.formulierGebruiker label, .formulierGebruiker input, .formulierGebruiker a {
+    font-size: 1.4em;
+}
+/*============================== color =======================================*/
+.formulierGebruiker {
+    background-color: #A3897A;
+}
+.formulierGebruiker a{
+    color: #240D03;
+}
+.foutmelding span{
+    background-color: #F2D061;
+/*    opacity: 0.6;
+    filter: alpha(opacity=60);*/
+}
+/*============================== opmaak ======================================*/
+
+.formulierGebruiker label {
+    width: 50%;
+    height: 2em;
+    float:left;
+    margin-bottom: 1%;  
+}
+.formulierGebruiker input {
+    width: 50%;
+    height: 2em;
+    float:left;
+    margin-bottom: 1%;    
+}
+.formulierGebruiker .btn-success {
+    height: 2.6em;
+    margin-left: 50%;
+}
+label.foutmelding{
+    width: 100%;
+    height: auto;
+}
+.foutmelding span {
+    display: inline-block;
+    width: 100%;
+    height: inherit;
+    line-height: 2;   
+}
+/*============================ media queries =================================*/
+
+@media only screen and (min-width: 480px){
+    /*zelfde principe een vaste hoogte om het verspringen tegen te gaan*/
+    label.foutmelding{
+        height: 2em;
+    }
+}
+@media only screen and (max-width: 420px){ /*eigen size in px genomen*/
+   .formulierGebruiker .btn-success{
+        margin-left: 0%;
+        width: 100%;
+    }
+    .formulierGebruiker label, .formulierGebruiker input {
+        width: 100%;
+    }
+    .formulierGebruiker label{
+        margin-top: 0.2em;
+        margin-bottom: 0em;
+    }
+    .formulierGebruiker input:nth-last-of-type(2){
+        margin-bottom: 0.4em;
+       
+        
+    }
+}
+/*====================== media queries =======================================*/
+@media only screen and (max-width: 991px){
+    /*.col-md-4 heeft een margin-bottom van 1.5 em gekregen in een andere pagina
+    vandaar moet deze een beetje aangepast worden*/
+    .onderwerp {
+        margin-bottom: 1.5em;
+    }
+    .onderwerp2 {
+        margin-bottom: 0em;
+    }
+}
+/*==============================================================================
+    bestelling & afrekening & contact
+==============================================================================*/
+/*======================= typografie =========================================*/
+.contact .form-control{
+    font-size: 1.4em;
+}
+
+/*=================================== color ================================*/
+.ui-datepicker {
+    background: #702C04;
+    border: 1px solid #52F7FF;
+    color: white;
+}
+
+/*======================= opmaak  ========================================*/
+
+.bestelling h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.thumbnail{
+    margin-bottom: 0;
+}
+.aantal {
+    text-align: right;
+}
+.afbeeld img{
+
+    height: 4em;
+    width: 6em;
+    border: 1px solid #702C04;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px; /* future proofing */
+    -khtml-border-radius: 4px; /* for old Konqueror browsers */
+}
+.button_bestelling{
+    width: 25%;
+}
+
+.input_afrekenen{
+    border: 1px solid white;
+    width: 48.5%;
+    margin-right: 1.5%;
+}
+.input_afrekenen input{
+    
+    width: 100%;
+}
+.button_afrekenen {
+   
+    width: 50%;
+    
+}
+.button_afrekenen input {
+    
+    width: 100%;
+    margin-bottom: 0.2em;
+    text-align: center;
+}
+/*=============================================================================
+    media queries
+==============================================================================*/
+@media only screen and (max-width: 319px){
+    li.list-group-item h3{
+        font-size: 1.3em;
+    }
+    li.list-group-item {
+        font-size: 0.8em;
+    }
+    .bestelling li label {
+        font-size: 0.8em;
+    }
+    .afrekenen li{
+        font-size: 1.3em;
+    }
+    .ui-datepicker{
+        height: 150px;
+        width: 200px;
+        font-size: 62.5%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 420px){ /*eigen size in px*/
+    li.list-group-item h3{
+        font-size: 1.4em;
+    }
+    li.list-group-item {
+        font-size: 0.9em;
+    }
+    .afrekenen li{
+    font-size: 1.4em;
+    }
+    .bestelling li label {
+        font-size: 0.9em;
+    }
+    
+    
+}
+@media only screen and (max-width: 991px){
+    .input_afrekenen{
+    
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.3em;
+    }
+    .button_bestelling{
+        width: 100%;
+    }
+    
+    .button_afrekenen{
+        width: 100%;
+    }
+    
+}
+
+/*==============================================================================
+    clearfix
+==============================================================================*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+/*============================================================================*/
